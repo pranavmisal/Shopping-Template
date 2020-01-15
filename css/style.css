@@ -1,0 +1,545 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+button{
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	height: 10vh;
+	align-items: center;
+}
+
+.logo-container, 
+.nav-links, 
+.cart{
+	display: flex;
+}
+
+.logo-container{
+	flex: 1;
+}
+
+.logo{
+	font-weight: 400;
+	margin: 5px;
+}
+
+nav{
+	flex: 2;
+	background: transparent;
+	box-shadow: 0 transparent
+}
+
+.nav-links{
+	justify-content: space-around;
+	list-style: none;
+}
+
+.nav-links{
+	color: #5f5f79;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.cart{
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.presentation{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+
+.introduction{
+		flex: 1;
+}
+
+.intro-text h1{
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+	margin-top: 5px;
+	font-size: 22px;
+	color: #585772;
+}
+
+.cta{
+	padding: 50px 0px 0px 0px;
+}
+
+.cta-select{
+	border: 2px solid #c36cbb;
+	background: transparent;
+	color: #c36cbb;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.cta-add{
+	background: #c36cbb;
+	border: none;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	color: white;
+	margin: 30px 0px 0px 30px;
+}
+
+.cover{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+
+.cover img{
+	height: 100%;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+
+.big-circle{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	opacity: 0.5;
+	height: 80%;
+}
+
+.medium-circle{
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	z-index: -1;
+	opacity: 0.4;
+	height: 60%;
+}
+
+.small-circle{
+	position: absolute;
+	bottom: 0%;
+	left: 20%;
+	z-index: -1;
+}
+
+.laptop-select{
+	width: 15%;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	right: 20%;
+}
+
+.spec{
+	width: 90%;
+	margin: 100px auto;
+	display: flex;
+}
+
+.spec-introduction{
+	display: inline-flex;
+	margin: 60px auto;
+	flex: 1;
+}
+
+.spec-cover{
+	display: inline-flex;
+	flex: 1;
+}
+
+.intro-spec h1{
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.intro-spec p{
+	margin-top: 5px;
+	font-size: 22px;
+	color: #585772;
+}
+
+/* table section */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: black;
+  background: url('img/mid-eclipse.svg') cover;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  /*background: rgba(0,0,0,.4);*/
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-remove {
+  color: red;
+}
+/* table section  end */
+
+.spec-cover table{
+	height: 100%;
+	/*filter: drop-shadow(0px 3px 5px black);*/
+	animation: drop 1.5s ease;
+}
+
+/*=========product=================*/
+.products{
+	width: 90%;
+	margin: auto;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin: 15px auto;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card p{
+	text-align: justify;
+}
+
+.row h1{
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.card-img{
+	width: 100%;
+}
+
+/*.row p{
+	margin-top: 5px;
+	font-size: 22px;
+	color: #585772;
+}*/
+
+/*=========product=================*/
+
+/*=======contact=================*/
+
+.contact{
+	display: flex;
+	width: 70%;
+	margin: 20px auto;
+	min-height: 80vh;
+	align-items: center;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+label{
+	color: #c36cbb;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+input[type=submit] {
+  background-color: #c36cbb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: transparent;
+  color: #c36cbb;
+  border: 2px solid #c36cbb;
+  transition: .9s ease;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.container h2{
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+.container p{
+	margin-top: 5px;
+	font-size: 22px;
+	color: #585772;
+}
+
+/* Create two columns that float next to eachother */
+.column-contact {
+  float: left;
+  width: 50%;
+  margin-top: 0px;
+  padding: 40px;
+}
+
+.contact-img{
+	width: 100%;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+
+/* Clear floats after the columns */
+.row-contact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+::placeholder {
+  color: gray;
+  opacity: 2;
+  font-family: 'Poppins', sans-serif;/* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: gray;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: gray;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-contact, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/*============contact end=================*/
+
+@keyframes drop{
+	0%{
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+/*==============media===================*/
+
+@media screen and (max-width: 1024px){
+	.presentation{
+		flex-direction: column;
+	}
+
+	.introduction{
+		margin-top: 5vh;
+		text-align: center;
+	}
+
+	.intro-text h1{
+		font-size: 30px;
+	}
+
+	.intro-text p{
+		font-size: 18px;
+	}
+
+	.cta{
+		padding: 10px 0 0 0;
+	}
+
+	.laptop-select{
+		bottom: 5%;
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+
+	.cover img{
+		height: 40vh;
+	}
+
+	.big-circle,
+	.medium-circle,
+	.small-circle{
+		opacity: 0.2;
+	}
+
+	.column{
+		width: 50%;
+	}
+
+	h4{
+		font-size: 1.28rem;
+	}
+
+}
+
+@media screen and (max-width: 600px) and (min-height: 320px){
+	.presentation{
+		flex-direction: column;
+	}
+
+	.introduction{
+		margin-top: 5vh;
+		text-align: center;
+	}
+
+	.intro-text h1{
+		font-size: 30px;
+	}
+
+	.intro-text p{
+		font-size: 18px;
+	}
+
+	.cta{
+		padding: 10px 0 0 0;
+	}
+
+	.laptop-select{
+		bottom: 5%;
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+
+	.cover img{
+		height: 40vh;
+	}
+
+	.big-circle,
+	.medium-circle,
+	.small-circle{
+		opacity: 0.2;
+	}
+
+	.logo-container h4{
+		display: none;
+	}
+
+	nav{
+		display: none;
+	}
+
+	.cta-add{
+		margin: 30px 0 0 0;
+	}
+
+	.cover img{
+		height: 20vh;
+	}
+
+	.spec{
+		display: grid;
+		text-align: center;
+	}
+
+	.card-img{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	.column{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) and (min-height: 320px) {
+	.column{
+		width: 100%;
+	}
+
+	.container{
+		text-align: center;
+	}
+
+	h1{
+		text-align: center;
+	}
+}
+
